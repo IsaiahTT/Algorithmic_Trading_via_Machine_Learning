@@ -58,6 +58,40 @@ All info is already input and worked on within the Jupyter file. Simply start fr
 
 ---
 
+## Results
+
+* Support Vector Machine Model - 3-month Period - 4D & 100D SMAs:
+  * Accuracy score: 55%
+  * Precision score: Sell class - 43%, Buy class - 56%
+  * Recall score: Sell class - 4%, Buy class - 96%
+
+* Support Vector Machine Model - 24-month Period - 4D & 100D SMAs:
+  * Accuracy score: 56%
+  * Precision score: Sell class - 80%, Buy class - 56%
+  * Recall score: Sell class - 0%, Buy class - 100%
+
+* Support Vector Machine Model - 24-month Period - 50D & 100D SMAs:
+  * Accuracy score: 56%
+  * Precision score: Sell class - 0%, Buy class - 56%
+  * Recall score: Sell class - 0%, Buy class - 100%
+
+* Logistic Regression Model - 3-month Period - 4D & 100D SMAs:
+  * Accuracy score: 52%
+  * Precision score: Sell class - 44%, Buy class - 56%
+  * Recall score: Sell class - 33%, Buy class - 66%
+
+## Summary
+
+At first, there was a simple algorithm created to buy and sell based on whether one SMA line was over another. When the first machine learning tool, Support Vector Machine (SVM), was used, it produced a great end result that ended about 10% higher than the actual returns.
+
+In the second trial, of 24 months reatheer than 3 as the period, the portfolio value stayed the same as the actual return for the first few years, then took a better path, and ended at about 10% than the last trial, with 1% more accuracy at 56%.
+
+In the third trial, with still a 24-month period and now a 50 day SMA and a 100 day instead of 4 & 100, accuracy remained higher, but the end cumulative return was less than trial 2. Thee sell precision and recall were both 0% meaning those classifications were at least all inaccurate.
+
+The last trial, which used Logistic Regression, had the original SMA and period configurations, just a differeent type of model. It had the lowest accuracy of 52%, and was the only one of the others to actually end with a lower ROI than the actual returns, though still positive at about 20% growth.
+
+Over all, the second SVM model was the most effective with the highest ROI.
+
 ## Contributor
 
 Isaiah T Tensae
